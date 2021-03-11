@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Service vidéo</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/logo.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger">GDR Tennis Guipavas</a>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <!--Retour site principal-->
+                        <li class="nav-item mx-0 mx-lg-1" id="retour-accueil"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" target="_blank" href="https://club.fft.fr/gdr-tennis-guipavas/nous-contacter.html">Retour</a></li>
+                        <!--retour accueil-->
+                        <li class="nav-item mx-0 mx-lg-1 d-none" id="retour-legislation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" id="bouton-retour-accueil" href="">Retour</a></li>
+                        <!--retour accueil-->
+                        <li class="nav-item mx-0 mx-lg-1 d-none" id="retour-code"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" id="bouton-retour-code" href="">Retour</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- accueil-->
+        <header class="masthead bg-primary text-white text-center" id="accueil">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/logo.png" alt="" />
+                <!-- Masthead Heading-->
+                <h1 class="text-uppercase mb-0">Authentification</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <!--<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>-->
+                </div>
+                <br />
+            
+                <!-- Masthead Subheading-->
+                <section id="authentication" class="container">
+                    <form id="authentication-send">
+                        
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Nom :</span>
+                        </div>
+                        <input id="nom" type="text" class="form-control" placeholder="Entrez votre nom" required autofocus>
+
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Prénom :</span>
+                        </div>
+                        <input id="prenom" type="text" class="form-control" placeholder="Entrez votre prénom" required autofocus>
+
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+
+                        <div class="input-group-prepend">
+                            <select id="horaire" type="text" class="form-control" required autofocus>
+                              <option selected>Sélectionnez votre horaire</option>
+                              <option value="1">10h-11h</option>
+                              <option value="2">11h-12h</option>
+                              <option value="3">12h-13h</option>
+                              <option value="4">13h-14h</option>
+                              <option value="5">14h-15h</option>
+                              <option value="6">15h-16h</option>
+                              <option value="7">16h-17h</option>
+                              <option value="8">17h-18h</option>
+                            </select>
+                        </div>
+
+                      </div>
+                      <br />
+                      <br />
+                      <div class="float-left">
+                        <input type="checkbox" id="checkbox1" name="scales">
+                          <label for="scales">&nbsp;&nbsp;Je certifie avoir pris connaissance de la <a id="lienleg" target="_blank" href="legislation.html"> législation en lien avec l'enregistrement vidéo proposé par le club.</a></label>
+                      </div>
+                      <br />
+                      <div class="float-left">
+                        <input type="checkbox" id="checkbox2" name="scales">
+                          <label for="scales">&nbsp;&nbsp;Je souhaite que la séance de tennis ou de padel correspondant aux horaires mentionnées soit enregistrée.</label>
+                      </div>
+                      <br />
+                      <br />
+                      <div class="mt-3">
+
+                        <button type="submit" id="login" class="btn btn-success mr-3">
+                          Se connecter
+                        </button>
+                        <button type="reset" class="btn btn-danger mr-3">
+                          Effacer
+                        </button>
+                      </div>
+                    </form>
+                </section>
+            </div>
+        </header>
+
+        <!-- code-->
+        <header class="masthead bg-primary text-white text-center d-none" id="code">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/logo.png" alt="" />
+                <!-- Masthead Heading-->
+                <h1 class="text-uppercase mb-0">Code de vérification</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <!--<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>-->
+                </div>
+                <br />
+            
+                <!-- Masthead Subheading-->
+                
+                 <form>
+                    <FONT size="4,5pt">
+                    <p>
+                        Veuillez saisir le code de vérification qui vient de vous être transmis par mail afin que nous puissions vérifier votre identité.  
+                    </p>
+                        
+                     </FONT>
+                </form>
+                
+                <section id="authentication" class="container">
+                    <form id="authentication-send">
+                        
+                        <div class="input-group">
+
+                            <input type="text" class="form-control2" id="codeperso" placeholder="Entrez votre code" required autofocus>
+
+                        </div>
+                        <br />
+
+                        <div class="police1 d-none" id="codebon">
+                            Code vérifié
+                        </div>
+
+                        <div class="police2 d-none" id="codefaux">
+                            Code incorrect
+                        </div>
+                        <div class="mt-3">
+
+                        <button type="submit" id="btnverifcode" class="btn btn-success mr-3">
+                            Vérification
+                        </button>
+                        <button type="reset" class="btn btn-danger mr-3">
+                            Effacer
+                        </button>
+                      </div>
+                    </form>
+                </section>
+            </div>
+        </header>
+
+        <!-- legislation-->
+        <header class="masthead bg-primary text-white text-center d-none" id="legislation">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/logo.png" alt="" />
+                <!-- Masthead Heading-->
+                <h1 class="text-uppercase mb-0">Législation</h1>
+                <!-- Icon Divider-->
+                
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <!--<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>-->
+                </div>
+                <!-- Masthead Subheading-->
+                
+                
+
+                <form>
+                    
+                    <br />
+                    
+                    <FONT size="4,5pt">
+                    <p>
+                    Dans le cadre du service d'enregistrement proposé par le Tennis club et en lien avec les lois présentées ci-dessous, nous nous engageons au respect de la vie privée de chacun. De cette manière, seulement les personnes concernées par un enregistrement auront accès à celui-ci et l'éventuel diffusion d'image de ces enregistrement sera soumise à une demande au préalable à l'utilisateur concerné.   
+                    </p>
+                    
+                    <I>
+                    <p>
+                        <B>L’article 9 du Code civil</B> dispose que « Chacun a droit au respect de sa vie privée. Les juges peuvent, sans préjudice de la réparation du dommage subi, prescrire toutes mesures, telles que séquestre, saisie et autres, propres à empêcher ou faire cesser une atteinte à l’intimité de la vie privée : ces mesures peuvent, s’il y a urgence, être ordonnées en référé. ».
+                    </p>
+                     
+                    <p>
+                        <B>L’article 226-1 du code pénal</B> punit d'un an d'emprisonnement et 45 000 euros d'amende le fait de porter atteinte à l'intimité de la vie privée d'autrui en fixant, enregistrant ou transmettant, sans le consentement de celle-ci, l'image d'une personne se trouvant dans un lieu privé.
+                    </p>
+                    </I>
+                    </FONT>
+                </form>
+                
+            </div>
+        </header>
+
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Localisation</h4>
+                        <p class="lead mb-0">
+                            Gars du Reun Tennis
+                            <br />
+                            66 Rue de Paris
+                            <br />
+                            29490 Guipavas   
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Nous retrouver</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://business.facebook.com/GDR-Tennis-Guipavas-860910703921093/?business_id=1196599277150054&ref=bookmarks"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://twitter.com/gdrtennis29"><i class="fab fa-fw fa-twitter"></i></a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">Nous contacter</h4>
+                        <p class="lead mb-0">
+                            <a target="_blank" href="mailto:gdr-tennis@fft.fr">
+                                gdr-tennis@fft.fr
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/chat.js"></script>
+    </body>
+</html>
